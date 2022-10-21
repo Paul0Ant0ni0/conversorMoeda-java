@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity" >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="277dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <ImageButton
+                android:id="@+id/btnBrasil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#00FFFFFF"
+                android:minHeight="48dp"
+                app:layout_constraintBottom_toTopOf="@+id/textOutput"
+                app:layout_constraintStart_toStartOf="@+id/inputValor"
+                app:layout_constraintTop_toBottomOf="@+id/inputValor"
+                app:layout_constraintVertical_bias="0.055"
+                app:srcCompat="@drawable/btn_brasil"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/btnUsa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:contentDescription="TODO"
+                app:layout_constraintBottom_toTopOf="@+id/textOutput"
+                app:layout_constraintEnd_toEndOf="@+id/inputValor"
+                app:layout_constraintTop_toBottomOf="@+id/inputValor"
+                app:layout_constraintVertical_bias="0.29"
+                app:srcCompat="@drawable/bnt_usa"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/inputValor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="65dp"
+                android:background="@drawable/bg_input"
+                android:ems="10"
+                android:hint="R$ 0.00"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textColorHint="#151515"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+                tools:text="R$ 0.00" />
+
+            <TextView
+                android:id="@+id/textOutput"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="65dp"
+                android:layout_marginBottom="19dp"
+                android:hint="$ 0.00"
+                android:textAlignment="center"
+                android:textColor="#6A6A6A"
+                android:textColorHint="#595959"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toTopOf="@+id/btnConverter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inputValor"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/btnConverter"
+                android:layout_width="207dp"
+                android:layout_height="17dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginEnd="65dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#3674EE"
+                android:text="Converter"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:cornerRadius="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textDesc"
+                android:layout_width="66dp"
+                android:layout_height="17dp"
+                android:gravity="end"
+                android:text="Valor (R$):"
+                android:textAlignment="textStart"
+                android:textColor="#393939"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toTopOf="@+id/inputValor"
+                app:layout_constraintEnd_toEndOf="@+id/inputValor"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/inputValor" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="31dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="9dp"
+                app:layout_constraintBottom_toBottomOf="@+id/btnBrasil"
+                app:layout_constraintEnd_toStartOf="@+id/btnUsa"
+                app:layout_constraintHorizontal_bias="0.153"
+                app:layout_constraintStart_toEndOf="@+id/btnBrasil"
+                app:layout_constraintTop_toTopOf="@+id/btnBrasil"
+                app:layout_constraintVertical_bias="0.437"
+                app:srcCompat="@drawable/setaspng" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
