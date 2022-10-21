@@ -1,7 +1,7 @@
 # conversorMoeda-java
 
 
-<strong>Descrição</strong>: Este aplicativo foi elaborado com o objetito de colocar em prática os conhecimentos adquiridos no curso de Java Full Stack.
+<strong>Descrição</strong>: Este aplicativo foi elaborado com o objetivo de colocar em prática os conhecimentos adquiridos no curso de <a href="https://soulcodeacademy.org/curso-java-full-stack"> Java Full Stack</a> da SoulCode Academy.
 <br>
 <strong>Repositório Java</strong>: https://github.com/Paul0Ant0ni0/estudos-java <br>
 <strong>Link do apk</strong>: https://drive.google.com/file/d/1j8HWxKwqEPwr0fDI3KGsaSF_HQqBvIEn/view?usp=sharing
